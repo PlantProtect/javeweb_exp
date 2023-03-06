@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="text">
+    <p>Please log in</p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 offset-md-4">
+        <form>
+          <div class="form-group">
+            <label for="username">用户名</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="gender">性别</label>
+            <select class="form-control" id="gender" name="gender" required>
+              <option value="">请选择性别</option>
+              <option value="male">男</option>
+              <option value="female">女</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="ege">年龄</label>
+            <input type="age" class="form-control" id="age" name="age">
+          </div>
+          <div class="form-group">
+            <label for="email">邮箱</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">手机号</label>
+            <input type="tel" class="form-control" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="hobbies">兴趣爱好</label><br>
+            <input type="checkbox" id="sing" name="hobbies[]" value="sing">
+            <label for="sing">唱</label>
+            <input type="checkbox" id="dance" name="hobbies[]" value="dance">
+            <label for="dance">跳</label>
+            <input type="checkbox" id="rap" name="hobbies[]" value="rap">
+            <label for="rap">rap</label>
+            <input type="checkbox" id="basketball" name="hobbies[]" value="basketball">
+            <label for="basketball">篮球</label>
+          </div>
+          <div class="form-group">
+            <label for="avatar">头像</label><br>
+            <input type="file" id="avatar" name="avatar" accept="image/*">
+          </div>
+          <button type="submit" class="btn btn-primary">提交</button>
+          <button type="reset" class="btn btn-secondary">重置</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
